@@ -12,7 +12,7 @@ This challenge is sent to experienced developers and newcomers alike. Developers
 
 ## Part 1: Questions
 
-The goal here is to demonstrate your JavaScript knowledge and to write your answers as clearly as possible. Please write each response under the relevant question in the [Questions](./QUESTIONS.md) file.
+The goal here is to demonstrate your JavaScript knowledge and to write your answers as clearly as possible.
 
 ## Part 2: The geo search API server
 
@@ -24,11 +24,11 @@ Specification:
 
 The server should respond to the following route
 
-    /locations?q=fuzzyMatchString
+    GET /locations?q=query
 
-Where `fuzzyMatchString` will be a partial name of a location. For example
+Where `query` will be a partial name of a location. For example
 
-    /locations?q=hastin
+    GET /locations?q=hastin
 
 Could return a the following JSON response (NOTE: Your dataset only contains GB locations, so the results will differ)
 
@@ -48,9 +48,7 @@ Could return a the following JSON response (NOTE: Your dataset only contains GB 
       "Hastings Slieve Donard Resort And Spa"
     ]
 
-NOTE: You should only start fuzzy matches if 2 or more characters are in the search string.
-
-Implementation:
+You should only return results if the `query` contains two or more characters.
 
 You can use whatever server library you like but it must be written in [node.js](https://nodejs.org). 
 
@@ -74,21 +72,21 @@ The results should be displayed in a list below the search box and update as the
 
 ```
 
-NOTE: It is important to display the correct results for a given search term. 
-
-Implementation:
-
 The implementation should be a single page app using React.js. The solution is only required to support the latest version of Chrome.
 
 ## Rules
 
-All work should be committed into a fork of this repo or pushed to a publicly-accessible repo. Feel free to add files/folders for part 2 and 3 as you see fit into this directory.
+All work should be committed into a fork of this repo or pushed to a publicly-accessible repo. 
+
+Please write each response for part 1 under the relevant question in the [Questions](./QUESTIONS.md) file.
+
+Feel free to organize your code for parts 2 and 3 into this directory however you like.
 
 You'll get bonus points if you
 
- * Display coordinates next to results
- * Add tests your code
  * Provide good documentation
+ * Add tests your code
+ * Display coordinates next to results
  * Sort the results by the closest name match
 
 Good luck!

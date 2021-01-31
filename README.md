@@ -86,7 +86,7 @@ You'll get bonus points if you
 
  * Provide good documentation
  * Add tests your code
- * Display coordinates next to results
- * Sort the results by the closest name match
+ * Sort the results by the closest name match (however you feel that is best)
+ * Deploy it so it can be viewed and used online
 
 Good luck!

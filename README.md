@@ -52,7 +52,7 @@ You should only return results if the `query` contains two or more characters.
 
 You can use whatever server library you like but it must be written in [node.js](https://nodejs.org). 
 
-The location data for your server should be stored in a [SQLite](https://www.sqlite.org/) database, and be loaded in from the [data source](data/) provided in this repo. The [readme](data/readme.txt) in that directory explains how to use the data.
+The location data for your server should be stored in a [SQLite](https://www.sqlite.org/) database, and be loaded in from the [data source](server/data/) provided in this repo. The [readme](server/data/readme.txt) in that directory explains how to use the data.
 
 ## Part 3: The React.js app to search for and display results
 
